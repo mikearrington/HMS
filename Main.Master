@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="HMS.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="width: 1000px; margin-left: auto; margin-right: auto; background-color:darkgray;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color:white;padding-bottom:5pt;" >
+            <tr>
+                <td width="50%"><asp:Image runat="server" ID="imgLogo" ImageUrl="~/images/hms.jpg" AlternateText="HMS Logo" />
+&nbsp;</td>
+                <td width="50%" align="right" style="padding-right:8pt;">User:
+        <asp:Label runat="server" ID="lblLogin" Text="Not Logged In"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form id="form1" runat="server">
+                        <div style="width: 100%; height: 600px;">
+                            <asp:ContentPlaceHolder ID="body" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr class="copyright">
+                <td colspan="2" style="text-align:center;">Copyright Healthcare Management Systems
+          <asp:Label runat="server" ID="lblCopyrightYear"></asp:Label>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
