@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="Data\AccountView.cs" />
+    <Compile Include="Data\AccountViews.cs" />
     <Compile Include="Data\BatchItem.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
