@@ -10,7 +10,6 @@ namespace HMS.Inquiry
 {
   public partial class Inquiry : System.Web.UI.Page
   {
-    List<AccountView> m_Accounts;
 
     protected void Page_Load(object sender, EventArgs e)
     {

@@ -15,10 +15,7 @@ namespace HMS.Data
     public DateTime LastVisit     { get; set; }
     public decimal  Balance       { get; set; }
     public string   Address1      { get; set; }
-    public string   Address2      { get; set; }
-    public string   City          { get; set; }
-    public string   State         { get; set; }
-    public string   Zip           { get; set; }
+    public string   CityStateZip  { get; set; }
 
 
     public AccountView(string _AccountNumber, 
@@ -29,10 +26,7 @@ namespace HMS.Data
                        DateTime _LastVisit, 
                        decimal _Balance, 
                        string _Address1, 
-                       string _Address2, 
-                       string _City, 
-                       string _State, 
-                       string _Zip)
+                       string _CityStateZip)
     {
       AccountNumber = _AccountNumber;
       Name          = _Name;
@@ -42,10 +36,7 @@ namespace HMS.Data
       LastVisit     = _LastVisit;
       Balance       = _Balance;
       Address1      = _Address1;
-      Address2      = _Address2;
-      City          = _City;
-      State         = _State;
-      Zip           = _Zip;
+      CityStateZip  = _CityStateZip;
     }
 
     public AccountView(string webData)
@@ -58,10 +49,8 @@ namespace HMS.Data
       string l_DOB       = l_Data[4];
       string l_LastVisit = l_Data[5];
       string l_Balance   = l_Data[6];
-      Address1  = l_Data[7];
-      City      = l_Data[8];
-      State     = l_Data[9];
-      Zip       = l_Data[10];
+      Address1     = l_Data[7];
+      CityStateZip = l_Data[8];
       DateTime l_DOBVal;
       DateTime l_LastVisitVal;
       decimal l_BalanceVal;

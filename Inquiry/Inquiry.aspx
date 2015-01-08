@@ -14,7 +14,7 @@
                 <td><a href="Inquiry2.aspx?Inq=a">Acronym</a></td>
             </tr>
             <tr>
-                <td><a href="Inquiry2.aspx?Inq=a">Last Name</a></td>
+                <td><a href="Inquiry2.aspx?Inq=l">Last Name</a></td>
             </tr>
             <tr>
                 <td>Demographic Data</td>

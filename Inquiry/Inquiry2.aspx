@@ -69,17 +69,8 @@
             <asp:BoundField DataField="Address1" HeaderText="Address1">
                 <ItemStyle Wrap="False" />
             </asp:BoundField>
-            <asp:BoundField DataField="Address2" HeaderText="Address2">
+            <asp:BoundField DataField="CityStateZip" HeaderText="City/State/Zip">
                 <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="City" HeaderText="City">
-                <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="State" HeaderText="State">
-                <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="Zip" HeaderText="Zip">
-                <ItemStyle Width="20px" Wrap="False" />
             </asp:BoundField>
         </Columns>
     </asp:GridView>
