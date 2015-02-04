@@ -10,10 +10,10 @@
 <body style="width: 1000px; margin-left: auto; margin-right: auto; background-color:darkgray;">
         <table width="100%" cellpadding="0" cellspacing="0" style="background-color:white;padding-bottom:5pt;" >
             <tr>
-                <td width="50%"><asp:Image runat="server" ID="imgLogo" ImageUrl="~/images/hms.jpg" AlternateText="HMS Logo" />
+                <td width="50%"><asp:Image runat="server" ID="imgLogo" ImageUrl="~/images/Image1.png" AlternateText="HMS Logo" Height="116px" Width="217px" />
 &nbsp;</td>
-                <td width="50%" align="right" style="padding-right:8pt;">User:
-        <asp:Label runat="server" ID="lblLogin" Text="Not Logged In"></asp:Label>
+                <td width="50%" align="right" style="padding-right:8pt; color: #0B2577;">User:
+        <asp:Label runat="server" ID="lblLogin" Text="Not Logged In" ForeColor="#0B2577"></asp:Label>
                 </td>
             </tr>
             <tr>

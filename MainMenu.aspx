@@ -26,8 +26,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="charges.aspx">Charges</a>
-
+                    <asp:HyperLink runat="server" ID="lnkCharges" NavigateUrl="/Charges/Charges1.aspx">Charges</asp:HyperLink>
 
                 </td>
             </tr>

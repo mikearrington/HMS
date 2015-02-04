@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HMS.InsPay {
+namespace HMS.Inspay {
     
     
     public partial class InsPay3 {

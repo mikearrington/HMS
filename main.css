@@ -2,9 +2,9 @@
 td {padding:2pt;
   margin-left: 160px;
 }
-.copyright {font-size:8pt;color:Gray;}
-.tablebody {color: Gray;font-size:10pt;}
+.copyright {font-size:8pt;color:#0B2577;}
+.tablebody {color: #0B2577;font-size:10pt;}
 .altRow {background-color: #fbefac;}
 .selRow {background-color:blue;color:#ffffff;}
 .pageWidth {width:1000px;}
-.breadcrumb {font-size:x-small;padding-left:8pt;}
+.breadcrumb {font-size:small;padding-left:10pt;color: #0B2577}

@@ -16,10 +16,12 @@
 <body style="margin-left: auto; margin-right: auto; height: 149px;">
   <form id="frmLogin" runat="server">
   <center><br /><br />
-      <h1>Medical Management Systems</h1><br /><br /><br />
-    <table cellpadding="0" cellspacing="0">
+      <h1 style="color:#0B2577">Healthcare Management Systems</h1>
+      <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Image1.png" />
+      <br /><br />
+    <table cellpadding="0" cellspacing="0" align="center">
       <tr>
-        <td>
+        <td style="color: #0B2577" align="right">
           <asp:RequiredFieldValidator ID="valUserId" runat="server" 
             ControlToValidate="txtUser" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;User&nbsp;Id:&nbsp;
@@ -29,7 +31,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td style="color: #0B2577" align="right">
           <asp:RequiredFieldValidator ID="valPwd" runat="server" 
             ControlToValidate="txtPwd" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;Password:&nbsp;
@@ -40,7 +42,8 @@
       </tr>
       <tr>
         <td colspan="2" align="center">
-          <asp:Button runat="server" ID="btnLogin" Text="Log In" />
+            <br />
+          <asp:Button runat="server" ID="btnLogin" Text="Log In" ForeColor="#0B2577" Width="66px" />
           <br />
           <br />
           <asp:label runat="server" ID="lblInvalidLogin" ForeColor="Red" Text=""></asp:label>

@@ -8,13 +8,13 @@
     <center>
         <table style="text-align:left;">
             <tr>
-                <td>INQUIRY OPTIONS<br/>&nbsp;</td>
+                <td style="color: #0B2577">INQUIRY OPTIONS<br/>&nbsp;</td>
             </tr>
             <tr>
                 <td><a href="Inquiry2.aspx?Inq=a">Acronym</a></td>
             </tr>
             <tr>
-                <td><a href="Inquiry2.aspx?Inq=a">Last Name</a></td>
+                <td><a href="Inquiry2.aspx?Inq=l">Last Name</a></td>
             </tr>
             <tr>
                 <td>Demographic Data</td>
@@ -29,7 +29,7 @@
                 <td>Transactions</td>
             </tr>
             <tr>
-                <td>Patient Action Follow Up</td>
+                <td><a href="ActionFollowup.aspx">Patient Action Follow Up</a></td>
             </tr>
             <tr>
                 <td><a href="Inquiry2.aspx?Inq=p">Policy Number</a></td>

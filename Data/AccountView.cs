@@ -13,12 +13,10 @@ namespace HMS.Data
     public string   DRNO          { get; set; }
     public DateTime DOB           { get; set; }
     public DateTime LastVisit     { get; set; }
+    public string   Flag          { get; set; }
     public decimal  Balance       { get; set; }
     public string   Address1      { get; set; }
-    public string   Address2      { get; set; }
-    public string   City          { get; set; }
-    public string   State         { get; set; }
-    public string   Zip           { get; set; }
+    public string   CityStateZip  { get; set; }
 
 
     public AccountView(string _AccountNumber, 
@@ -27,12 +25,10 @@ namespace HMS.Data
                        string _DRNO, 
                        DateTime _DOB, 
                        DateTime _LastVisit, 
+                       string _Flag,
                        decimal _Balance, 
                        string _Address1, 
-                       string _Address2, 
-                       string _City, 
-                       string _State, 
-                       string _Zip)
+                       string _CityStateZip)
     {
       AccountNumber = _AccountNumber;
       Name          = _Name;
@@ -40,12 +36,10 @@ namespace HMS.Data
       DRNO          = _DRNO;
       DOB           = _DOB;
       LastVisit     = _LastVisit;
+      Flag          = _Flag;
       Balance       = _Balance;
       Address1      = _Address1;
-      Address2      = _Address2;
-      City          = _City;
-      State         = _State;
-      Zip           = _Zip;
+      CityStateZip  = _CityStateZip;
     }
 
     public AccountView(string webData)
@@ -57,11 +51,10 @@ namespace HMS.Data
       DRNO      = l_Data[3];
       string l_DOB       = l_Data[4];
       string l_LastVisit = l_Data[5];
-      string l_Balance   = l_Data[6];
-      Address1  = l_Data[7];
-      City      = l_Data[8];
-      State     = l_Data[9];
-      Zip       = l_Data[10];
+      string l_Flag      = l_Data[6];
+      string l_Balance   = l_Data[7];
+      Address1     = l_Data[8];
+      CityStateZip = l_Data[9];
       DateTime l_DOBVal;
       DateTime l_LastVisitVal;
       decimal l_BalanceVal;

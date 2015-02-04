@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HMS.InsPay {
+namespace HMS.Inspay {
     
     
-    public partial class InsPay2 {
+    public partial class Chgs1 {
         
         /// <summary>
         /// lnkHome control.

@@ -14,7 +14,7 @@
     <RootNamespace>HMS</RootNamespace>
     <AssemblyName>HMS</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -62,8 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Batch\BatchVerify.aspx" />
+    <Content Include="Charges\Charges1.aspx" />
+    <Content Include="Charges\Charges2.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="images\hms.jpg" />
+    <Content Include="images\Image1.png" />
+    <Content Include="Inquiry\ActionFollowup.aspx" />
     <Content Include="Inquiry\Inquiry.aspx" />
     <Content Include="Inquiry\Inquiry2.aspx" />
     <Content Include="InsPay\InsPay1.aspx" />
@@ -88,9 +92,25 @@
     <Compile Include="Batch\BatchVerify.aspx.designer.cs">
       <DependentUpon>BatchVerify.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Charges\Charges1.aspx.cs">
+      <DependentUpon>Charges1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Charges\Charges1.aspx.designer.cs">
+      <DependentUpon>Charges1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Charges\Charges2.aspx.cs">
+      <DependentUpon>Charges2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Charges\Charges2.aspx.designer.cs">
+      <DependentUpon>Charges2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="Data\AccountView.cs" />
     <Compile Include="Data\AccountViews.cs" />
+    <Compile Include="Data\ActionFollowUpView.cs" />
+    <Compile Include="Data\ActionFollowUpViews.cs" />
     <Compile Include="Data\BatchItem.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -98,6 +118,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inquiry\ActionFollowup.aspx.cs">
+      <DependentUpon>ActionFollowup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inquiry\ActionFollowup.aspx.designer.cs">
+      <DependentUpon>ActionFollowup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inquiry\Inquiry.aspx.cs">
       <DependentUpon>Inquiry.aspx</DependentUpon>
@@ -163,7 +190,17 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\www.mikearrington.com.pubxml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="OBJECTSONLib">
+      <Guid>{D560BDD9-B3A6-46A2-B8A8-87B8A9F9850B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -175,12 +212,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63238</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:63239/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

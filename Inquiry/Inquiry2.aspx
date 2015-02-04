@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Inquiry2.aspx.cs" Inherits="HMS.Inquiry.InqAcro" %>
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" MasterPageFile="~/Main.Master"  CodeBehind="Inquiry2.aspx.cs" Inherits="HMS.Inquiry.InqAcro" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Inquiry By Acronym
@@ -42,7 +42,7 @@
     </table>
 
     <asp:GridView runat="server" ID="grdInquiry" AutoGenerateColumns="False" AllowPaging="True"
-        AllowSorting="True" AutoGenerateSelectButton="True" GridLines="None"
+        AllowSorting="True" AutoGenerateSelectButton="True"
         OnPageIndexChanging="grdInquiryByAcronym_PageIndexChanging" PageSize="20" CssClass="tablebody" AlternatingRowStyle-CssClass="altRow" SelectedRowStyle-CssClass="selRow">
         <Columns>
             <asp:BoundField DataField="AccountNumber" HeaderText="Acct#">
@@ -63,23 +63,17 @@
             <asp:BoundField DataField="LastVisit" HeaderText="Last Visit" DataFormatString="{0:d}">
                 <ItemStyle Wrap="False" />
             </asp:BoundField>
+            <asp:BoundField DataField="Flag" HeaderText="Flag">
+                <ItemStyle Wrap="False" HorizontalAlign="Right" />
+            </asp:BoundField>
             <asp:BoundField DataField="Balance" HeaderText="Balance">
                 <ItemStyle Wrap="False" HorizontalAlign="Right" />
             </asp:BoundField>
             <asp:BoundField DataField="Address1" HeaderText="Address1">
                 <ItemStyle Wrap="False" />
             </asp:BoundField>
-            <asp:BoundField DataField="Address2" HeaderText="Address2">
+            <asp:BoundField DataField="CityStateZip" HeaderText="City/State/Zip">
                 <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="City" HeaderText="City">
-                <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="State" HeaderText="State">
-                <ItemStyle Wrap="False" />
-            </asp:BoundField>
-            <asp:BoundField DataField="Zip" HeaderText="Zip">
-                <ItemStyle Width="20px" Wrap="False" />
             </asp:BoundField>
         </Columns>
     </asp:GridView>

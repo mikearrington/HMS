@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HMS.InsPay
+namespace HMS.Inspay
 {
   public partial class InsPay1 : System.Web.UI.Page
   {
